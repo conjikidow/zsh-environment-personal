@@ -1,4 +1,4 @@
-# My personal zsh configuration file
+# Useful zsh configuration file
 # Copyright (C) 2023 conjikidow
 #
 # This program is free software: you can redistribute it and/or

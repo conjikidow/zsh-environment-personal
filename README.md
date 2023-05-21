@@ -1,5 +1,5 @@
 # zsh-environment
-This repository contains my personal zsh configuration files.
+This repository contains useful zsh configuration files.
 Feel free to customize the configuration files to suit your needs.
 
 It is recommended to install this using [ubuntu-environment](https://github.com/conjikidow/ubuntu-environment.git).
