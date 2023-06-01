@@ -76,7 +76,7 @@ alias shfmt="shfmt -i 4 -ci -sr"
 # Zsh
 
 setopt PROMPT_SUBST  # Enables parameter substitution in prompts
-source $ZDOTDIR/.git_prompt.sh
+source ${ZDOTDIR}/.git_prompt.sh
 export PROMPT='zsh:%F{green}%~%f %F{magenta}$(__git_ps1 "%s" )%f$ '
 export RPROMPT='%F{yellow}%w %T%f'
 
@@ -156,7 +156,7 @@ if command -v pyenv 1> /dev/null 2>&1; then
     eval "$(pyenv init -)"  # Initializes pyenv
 fi
 
-export PYTHONSTARTUP=~/.python/pythonrc.py
+export PYTHONSTARTUP=${ENVDIR}/python/pythonrc.py
 alias python='python3'
 alias pip='pip3'
 alias pip_upgrade="python3 -m pip install --upgrade pip && pip3 list -o | tail -n +3 | awk '{ print $1 }' | xargs pip3 install -U"  # Upgrades pip and installs available package updates
@@ -189,13 +189,13 @@ function pf() { # Format .py file
 
 # Go
 
-export GOPATH="${HOME}/Tools/go"
+export GOPATH=${ENVDIR}/go
 
 
 # LaTeX
 
-export LATEXDIR="${HOME}/Tools/latex"
-export TEXMFHOME="${LATEXDIR}/texmf"
+export LATEXDIR=${ENVDIR}/latex
+export TEXMFHOME=${LATEXDIR}/texmf
 
 
 # QT
