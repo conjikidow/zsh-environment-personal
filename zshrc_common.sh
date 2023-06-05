@@ -161,12 +161,12 @@ function pf() { # Format .py file
 
 # Go
 
-export GOPATH="${HOME}/Tools/go"
+export GOPATH=${ENVDIR}/go
 
 
 # LaTeX
 
-export LATEXDIR="${HOME}/Tools/latex"
+export LATEXDIR=${ENVDIR}/latex
 export TEXMFHOME="${LATEXDIR}/texmf"
 
 

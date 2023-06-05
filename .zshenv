@@ -15,13 +15,16 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 
+export ENVDIR="${HOME}/environment"
+
+
 # Zsh
 
-export ZDOTDIR="${HOME}/.zsh"
+export ZDOTDIR="${ENVDIR}/zsh"
 export HISTFILE="${ZDOTDIR}/.zsh_history"
 
 
 # Python
 
-export PYENV_ROOT="${HOME}/.python/pyenv"
+export PYENV_ROOT="${ENVDIR}/python/pyenv"
 export PATH="${PYENV_ROOT}/bin:${PATH}"
