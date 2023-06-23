@@ -19,9 +19,9 @@ function set_utwifi() {
     SSID_UTokyoWiFi="0000UTokyo"
     SSID_eduroam="eduroam"
 
-    echo "User ID > \c"
+    echo "Enter the user ID prior to "@" symbol > \c"
     read USER_ID
-    echo "Password > \c"
+    echo "Enter the password > \c"
     read PASSWORD
 
     nmcli connection edit id ${SSID_UTokyoWiFi} << EOF
