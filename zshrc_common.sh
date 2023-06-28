@@ -161,7 +161,8 @@ function pf() { # Format .py file
 
 # Go
 
-export GOPATH=${ENVDIR}/go
+export GOPATH=${HOME}/.go
+export PATH="${CPATH}:${GOROOT}/bin:${GOPATH}/bin"
 
 
 # LaTeX
