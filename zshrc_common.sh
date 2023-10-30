@@ -135,7 +135,7 @@ if command -v pyenv 1> /dev/null 2>&1; then
     eval "$(pyenv init -)"  # Initializes pyenv
 fi
 
-export PYTHONSTARTUP=~/.python/pythonrc.py
+export PYTHONSTARTUP=${ENVDIR}/python/pythonrc.py
 alias py='python3'
 alias pip='pip3'
 alias pip_upgrade="python3 -m pip install --upgrade pip && pip3 list -o | tail -n +3 | awk '{ print $1 }' | xargs pip3 install -U"  # Upgrades pip and installs available package updates
